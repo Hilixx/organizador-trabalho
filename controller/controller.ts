@@ -44,6 +44,7 @@ module.exports = class controller{
           const nomeTema3 = newTemas[2]
           const nomeTema4 = newTemas[3]
           
+          
         
         res.render('randomTeams',{nomeTema1,nomeTema2,nomeTema3,nomeTema4,name1,name2,name3,name4})
     }

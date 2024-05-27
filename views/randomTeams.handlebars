@@ -1,16 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>integrantes</title>
+    <link rel="icon" href="/imagens/icon.png">
+    <link rel="stylesheet" href="/css/randomTeams.css">
+</head>
+<body>
+    
+    <h2 id="title">👯Nome dos integrantes</h2>
+    <form class="forms" action="/tasks/teams" method="POST">
+        <input id="task" type="text" name="name1" placeholder="Nome 1">
+        <input id="task" type="text" name="name2" placeholder="Nome 2">
+        <input id="task" type="text" name="name3" placeholder="Nome 3">
+        <input id="task" type="text" name="name4" placeholder="Nome 4">
+    
+        <h2 id="title">🛠️Funções a serem feitas</h2>
 
- 
-    <h1>Escreva o nome dos quatro integrantes e os temas ou funções</h1>
-    <form action="/tasks/teams" method="POST">
-    <input type="text" name="name1" placeholder="Nome 1">
-    <input type="text" name="name2" placeholder="Nome 2">
-    <input type="text" name="name3" placeholder="Nome 3">
-    <input type="text" name="name4" placeholder="Nome 4">
-    <input type="text" name="tema1" placeholder="temas/função">
-    <input type="text" name="tema2" placeholder="temas/função">
-    <input type="text" name="tema3" placeholder="temas/função">
-    <input type="text" name="tema4" placeholder="temas/função">
-    <input type="submit" value="enviar">
+        <input id="task" type="text" name="tema1" placeholder="temas/função">
+        <input id="task" type="text" name="tema2" placeholder="temas/função">
+        <input id="task" type="text" name="tema3" placeholder="temas/função">
+        <input id="task" type="text" name="tema4" placeholder="temas/função">
+        <input id="enviar" type="submit" value="enviar">
+        <button id="button-voltar"><a href="index.handlebars">Voltar</a></button>
     </form>
     {{#if nomeTema1}}
         
@@ -23,4 +36,7 @@
     <a href="/tasks">Definir tasks</a>
 
 
-    {{/if}}
+    {{/if}} 
+    
+</body>
+</html>
