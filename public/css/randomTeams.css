@@ -102,3 +102,27 @@ a:link {
 a:visited {
     color: #916CAB;
 }
+
+#nomeTema {
+    
+    color: #C586E2;
+    font-size: x-large;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#button-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    background-color: #140D1A;
+    border-color: #F6F8B0;
+    font-weight: 800;
+}
