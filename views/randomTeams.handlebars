@@ -16,27 +16,27 @@
         <input id="task" type="text" name="name3" placeholder="Nome 3">
         <input id="task" type="text" name="name4" placeholder="Nome 4">
     
-        <h2 id="title">🛠️Funções a serem feitas</h2>
-
+    <h2 id="title">🛠️Funções a serem feitas</h2>
+    <form class="forms" action="/tasks/teams" method="POST">
         <input id="task" type="text" name="tema1" placeholder="temas/função">
         <input id="task" type="text" name="tema2" placeholder="temas/função">
         <input id="task" type="text" name="tema3" placeholder="temas/função">
         <input id="task" type="text" name="tema4" placeholder="temas/função">
         <input id="enviar" type="submit" value="enviar">
-        <button id="button-voltar"><a href="index.handlebars">Voltar</a></button>
+        <button id="button-voltar"><a href="index.html">Voltar</a></button>
     </form>
     {{#if nomeTema1}}
         
-    <h1>{{name1}} : {{nomeTema1}}</h1>
-    <h1>{{name2}} : {{nomeTema2}}</h1>
-    <h1>{{name3}} : {{nomeTema3}}</h1>
-    <h1>{{name4}} : {{nomeTema4}}</h1>
+    <h1 id="nomeTema">{{name1}} : {{nomeTema1}}</h1>
+    <h1 id="nomeTema">{{name2}} : {{nomeTema2}}</h1>
+    <h1 id="nomeTema">{{name3}} : {{nomeTema3}}</h1>
+    <h1 id="nomeTema">{{name4}} : {{nomeTema4}}</h1>
 
     
-    <a href="/tasks">Definir tasks</a>
+    <a id="button-task" href="/tasks">Definir tasks</a>
 
 
-    {{/if}} 
+    {{/if}}
     
 </body>
 </html>
