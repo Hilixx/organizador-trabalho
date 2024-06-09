@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    /* geral */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #140D1A;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.title {
+    color: #916CAB;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 3rem 10rem;
+}
+
+#enviar {
+    width: 25rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: #916CAB;
+    border-color: #7e6294;
+    margin-top: 2rem;
+    font-weight: 750;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin: 0.1rem 0;
+}
+
+.task input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid #cc92f5;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.task input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #ecd9fa;
+}
+
+.task label {
+    text-align: justify;
+    color: #ecd9fa;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+
+span {
+    text-align: justify;
+    color: #DEBEF6;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+
+

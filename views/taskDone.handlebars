@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>resultado</title>
     <link rel="icon" href="/imagens/icon.png">
+    <link rel="stylesheet" href="/css/taskDone.css">
 </head>
 <body>
-    <h1>Escreva o nome dos quatro integrantes e os temas ou funções</h1>
-    <form action="/tasks/done" method="POST">
-    <input type="hidden" value={{task1}} name="task1">
-    <input type="hidden" value={{task2}} name="task2">
-    <input type="hidden" value={{task3}} name="task3">
-    <input type="hidden" value={{task4}} name="task4">
+    <h1 class="title">Escreva o nome dos quatro integrantes e os temas ou funções</h1>
+    <form class="forms" action="/tasks/done" method="POST">
+        <input type="hidden" value="{{task1}}" name="task1">
+        <input type="hidden" value="{{task2}}" name="task2">
+        <input type="hidden" value="{{task3}}" name="task3">
+        <input type="hidden" value="{{task4}}" name="task4">
 
+        <div class="task">
+            <input type="checkbox" name="taskDone1"><span>{{task1}}</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" name="taskDone2"><span>{{task2}}</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" name="taskDone3"><span>{{task3}}</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" name="taskDone4"><span>{{task4}}</span>
+        </div>
 
-
-    <p>{{task1}}</p>
-    <input type="checkbox" name="taskDone1">
-
-     <p>{{task2}}</p>
-    <input type="checkbox" name="taskDone2">
-
-     <p>{{task3}}</p>
-    <input type="checkbox" name="taskDone3">
-    
-     <p>{{task4}}</p>
-    <input type="checkbox" name="taskDone4">
-    <p>-------</p>
-    <input type="submit" value="enviar">
+        <input id="enviar" type="submit" value="enviar">
     </form>
 </body>
 </html>
